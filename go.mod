@@ -1,4 +1,4 @@
-module gitlab.openresearch.com/or-infrastructure/or-hetzner/or-talos-kms-aws
+module github.openresearch.com/talos-kms-proxy
 
 go 1.23.0
 

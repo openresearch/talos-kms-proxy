@@ -1,4 +1,4 @@
-# OpenResearch Talos KMS Server
+# Talos KMS Server
 
 This project implements a [Talos KMS API](https://github.com/siderolabs/kms-client) that uses the AWS KMS as the actual KMS solution.
 
@@ -71,28 +71,28 @@ $ export AWS_ACCESS_KEY_ID=$ACCESS_KEY_ID
 $ export AWS_SECRET_ACCESS_KEY=$ACCESS_KEY_SECRET
 $ export AWS_HOSTED_ZONE_ID=$HOSTED_ZONE_ID
 
-$ orkms --domain kms.orhk-dev.openresearch.com
+$ taloskms --domain kms.dev.example.com
 ```
 This will start the server and listen for incomming messages on `*:4050`.
 
 ### Usage command:
 ```bash
-$ orkms -h
+$ taloskms -h
 NAME:
-   orkms - OpenResearch Talos KMS Server
+   taloskms - Talos KMS Server
 
 USAGE:
-   orkms [global options]
+   taloskms [global options]
 
 VERSION:
    0.2.0-SNAPSHOT-3c77f4c
 
 GLOBAL OPTIONS:
    --listen-port value, -p value                          Service listen port (default: ":4050") [$LISTEN_PORT]
-   --email value, -e value                                Email to use for ACME Client (default: "ops@openresearch.com") [$EMAIL]
+   --email value, -e value                                Email to use for ACME Client [$EMAIL]
    --domain value, -d value [ --domain value, -d value ]  Domain used in SAN filed for the server certificate (can be repeated) [$DOMAINS]
    --cron value, -c value                                 CRON string for certificate renewal cronjob (default: "0 0 1 */2 *") [$CRON]
-   --workdir value, --wd value                            Working directory to store files (default: ".orkms") [$WORKDIR]
+   --workdir value, --wd value                            Working directory to store files (default: ".taloskms") [$WORKDIR]
    --log-level value, -l value                            Logging level to use (default: "info") [$LOG_LEVEL]
    --aws-kms-key-id value                                 AWS KMS key ID [$AWS_KMS_KEY_ID]
    --aws-access-key-id value                              AWS access key ID [$AWS_ACCESS_KEY_ID]

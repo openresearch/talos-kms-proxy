@@ -11,8 +11,8 @@ import (
 	"github.com/thejerf/suture/v4"
 	"github.com/urfave/cli/v3"
 
-	"gitlab.openresearch.com/or-infrastructure/or-hetzner/or-talos-kms-aws/internal/acme"
-	"gitlab.openresearch.com/or-infrastructure/or-hetzner/or-talos-kms-aws/internal/kms"
+	"github.openresearch.com/talos-kms-proxy/internal/acme"
+	"github.openresearch.com/talos-kms-proxy/internal/kms"
 )
 
 // run executes the main routine and listens for incoming requests

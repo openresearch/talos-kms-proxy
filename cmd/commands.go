@@ -7,7 +7,7 @@ import (
 var (
 	commands = &cli.Command{
 		Name:    appname,
-		Usage:   "OpenResearch Talos KMS Server",
+		Usage:   "Talos KMS Server",
 		Version: version,
 		Before:  prepare,
 		Action:  run,
@@ -23,7 +23,6 @@ var (
 			&cli.StringFlag{
 				Name:     "email",
 				Usage:    "Email to use for ACME Client",
-				Value:    "ops@openresearch.com",
 				Aliases:  []string{"e"},
 				Sources:  cli.EnvVars("EMAIL"),
 				Required: false,
@@ -38,7 +37,7 @@ var (
 			&cli.StringFlag{
 				Name:     "workdir",
 				Usage:    "Working directory to store files",
-				Value:    ".orkms",
+				Value:    ".taloskms",
 				Aliases:  []string{"wd"},
 				Sources:  cli.EnvVars("WORKDIR"),
 				Required: false,

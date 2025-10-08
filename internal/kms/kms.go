@@ -14,7 +14,7 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/siderolabs/kms-client/api/kms"
-	oraws "gitlab.openresearch.com/or-infrastructure/or-hetzner/or-talos-kms-aws/internal/aws"
+	oraws "github.openresearch.com/talos-kms-proxy/internal/aws"
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
